@@ -21,7 +21,7 @@
         <div class="col-10 col-md-8 col-lg-6">
             <h3>Add a Menu Item</h3>
             <form action="{{ route('menuitems.store') }}" method="POST">
-                @csrf  <!-- CSRF token to protect against CSRF attacks -->
+                @csrf
 
                 <div>
                     <label for="name">Item Name</label>

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('order_number')->nullable();
             $table->integer('price');
             $table->string('img')->nullable();
+            $table->foreignId('menu_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
